@@ -1,0 +1,43 @@
+body{
+    background-color: #255779;
+    font: normal 15px Arial;
+
+}
+header{
+    color: white;
+    text-align: center;
+    
+}
+section{
+    
+    background-color: beige;
+    border-radius: 10px;
+    padding: 15px;
+    width: 450px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.562);
+}
+
+div{
+    text-align: justify;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+   
+}
+
+select#flista{
+    width: 175px;
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    color: #474343;
+    text-decoration: none;
+    text-align: center;
+    font: normal 15px Arial;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.562);
+
+}

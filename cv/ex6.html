@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo C - DOM </title>
+</head>
+<style>
+    body{
+        background-color: bisque;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .h2-0{
+        color: brown;
+        text-shadow: 0.1em 0.1em #333;
+        text-align: center;
+    }
+    .div0{
+        font-style: oblique;
+        color: rgba(211, 12, 12, 0.897);
+        text-shadow: 0.1em 0.1em 0.2em black;
+    }
+</style>
+<body>
+    <h2 class="h2-0">DOM - Document Object Model - Aula 9</h2>
+    <a href="index.html" title="Home"><button > &#127968; </button></a>
+    
+    <div id="intro">
+
+    </div>
+    <img src="img/lu4PMfw.jpg" alt="arvoreDOM"  style="float:right;width: 500px">
+    <div>
+        Todo arvoré <strong>DOM</strong> começa pela a raiz que é window 
+         dentro de window tem varios objetos como por exemplo:
+        <br> <i>location:</i> qual a localização do site, <i>history:</i> o historico.
+        <br> Em <i>document:</i> contem o HTML(chamado de parent, ou pai), 
+        <br> que contém dois filhos (ou child) o Head e o body 
+        <br>e assism por diante como uma arvoré de parentes mostrando como esta o codigo.
+        <p> E usado para adicionar ou acessar a arvoré pelo javaScript.</p>
+    </div>
+    <div  class="div0"> Como utilizar os métodos getElementByTagName, getElementById, 
+        getElemenstByName, getElementByClassName, querySelector ! 
+    </div>
+    <p id="p2">
+        Podemos acessoar por 5 tipos: <strong>Por Marca</strong> usando o getElementByTagName() para utilizar com mais de uma tag, na forma arrays[0,1,...]
+        <br><strong>Por ID</strong> usando o getElementById() usando a tag e adicionando o elemento id posso chamar apenas a tag relacionada ao id.
+        <br><strong>Por Nome</strong> usando getElemenstByName() 
+        <br><strong>Por Classe</strong> usando getElementsByClassName()
+        <br><strong>Por Seletor</strong> usando querySelector
+
+    </p>
+
+    </body>
+<script>
+     
+
+window.document.write(window.navigator.appName) // mostra o navegador usado
+window.document.write(window.document.URL )  //mostra URL
+
+var p1 = window.document.getElementsByTagName('p')[0]
+window.document.write('<br> repricou meu primeiro paragrafo:( ' + p1.innerText + ' ).') 
+p1.style.color= 'blue' //muda a cor do primeiro p para azul
+//window.alert(p1.innerHTML)  //alerta
+var corpo = window.document.body
+corpo.style.background = '#cdc'
+
+var d0 = window.document.getElementById('intro') 
+d0.style.background = 'yellow'
+d0.innerText = 'teste: div indentificada pelo id= d0 '
+
+var p2 = window.document.querySelector('p#p2') //e representado por(.) class representado por (#)
+p2.style.background = '#57627F'
+
+
+</script>
+</html>

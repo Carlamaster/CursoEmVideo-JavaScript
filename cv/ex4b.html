@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" title="Home"><button > &#127968; </button></a>
+
+
+    
+</body>
+<script>
+    var nome = window.prompt('qual e o seu nome')
+    document.write(`Seu nome tem <strong> ${nome.length} </strong> letras <br>`); // html strong dentro JS
+    document.write(`Seu nome em Maiuscula ${nome.toUpperCase()}<br> `);
+    document.write(`Seu nome em Minuscula ${nome.toLowerCase()} <br>`);
+    
+    var n1 = 1543.5
+    document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}),'<br>') // para trasformar o numero em dinheiro pode ser usado USD e EUR
+    document.write(`A variavel 1543.50 para dois digitos e virgula ${n1.toFixed(2).replace('.', ',')} `) //para colocar dois digitos e virgula
+    
+
+
+
+</script>
+</html>

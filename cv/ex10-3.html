@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando numeros aula10 - Evento DOM </title>
+    <style>
+        body{
+            font: 18px arial;
+        }
+        input{
+            font-size: 18px;
+            color: rgb(41, 68, 58);
+            
+        }
+        div{
+            font: 20px arial;
+            color: #48fd00;
+            
+        }
+    
+        .blink {
+                animation: blinker 1.5s linear infinite;
+                color: red;
+                font-family: sans-serif;
+                padding: 10px;
+            width: 18%;
+            height: 50px;
+            background-color: rgb(59, 59, 56);
+            }
+           
+        </style>
+    </head>
+
+<body>
+    
+    
+    
+    <a href="index.html" title="Home"><button > &#127968; </button></a>
+    
+    <h1>Somando Valores</h1>
+    
+    <input type="number" name="txtn1" id="txtn1">
+    <br><b>+</b><br>
+    <input type="number" name="txtn2" id="txtn2">
+    <br>
+    <input type="button" value="Somar" onclick="somar()">
+        <div id="res">
+            <strong>Resultado: </strong>
+        </div>
+</body>
+<script>
+    function somar(){
+        var tn1 = window.document.getElementById('txtn1')
+        var tn2 = window.document.querySelector('input#txtn2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2
+        res.innerHTML = `O resultado entre ${n1} + ${n2} <br> e igual a ${s}.`
+
+
+    }
+</script>
+</html>

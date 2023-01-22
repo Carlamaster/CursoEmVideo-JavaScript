@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercìcio 12</title>
+    <style>
+        body{
+            background-color: #5a5a5a;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" title="Home"><button type="button"> &#127968; </button></a><br>
+   <br>
+    
+    <div class="area" name="area" id="area"> 
+       
+    </div>
+   
+    
+</body>
+<script>
+    const agora = () => {
+    let h = new Date().toLocaleTimeString('pt-BR', {hour: 'numeric', hour12: false});
+    
+    if (h >= 0 && h <= 5) { 
+      return 'Boa madrugada';
+    } else if (h >= 6 && h < 12) { 
+      return 'Bom dia';
+    } else if (h >= 12 && h < 18) { 
+      return 'Boa tarde';
+    } else if (h >= 18 && h <= 23) { 
+      return 'Boa noite';
+    }
+  
+   
+  }
+  
+      var a = window.document.getElementById('area')
+      a.innerText = `Olá, ${agora()} !`;
+      a.style.color = '#ff00ff'
+      a.style.fontFamily = 'Arial'
+      a.style.fontSize = '20px'
+      
+  
+    
+</script>
+</html>

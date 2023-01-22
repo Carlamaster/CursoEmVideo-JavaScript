@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7 operadores</title>
+</head>
+<body>
+    <a href="index.html" title="Home"><button > &#127968; </button></a>
+    
+</body>
+<script>
+    document.write('video 7 operadores parte A')
+    /* operadores aritmeticos
+        % e o resto da divisão exemplo 5.2= 1 pois ele so retorna oresto
+        ** e ao quadrado exemplo 5 elevado ao quadrado 2 = 5x5= 25
+    Ordem de precedência
+        () o que esta em parentes
+        ** ao quadrado 
+        * / % vezes, divisão, resto
+        + -    adição, subtração
+        ! nao-negação
+        && e-conjução
+        || ou-dijunção
+
+    */
+
+var a = 5+3 //8
+var b = a % 5 //3
+var c = 5*b**2 //45
+var d = 10-a/2 //6
+var e =6*2/d //2
+var f = b%e + 4/e //3
+document.write(`${a} ${b} ${c} ${d} ${e} ${f}`)
+
+// atribuiçao
+//a = a + 1 ou a+=1 as duas formas faz auto atribuição da variavel a
+
+
+// incremento e simbolizado por ++ e --
+// exemplos
+
+/* pos incremento
+     var x = 5
+    x = + 1 //fica 6
+    x -= 1 // fica 5
+    x++ // fica 6
+    x-- // fica 5
+
+    Pre incremento 
+    x = + 1 //fica 6
+    x -= 1 // fica 5
+    ++x // fica 6
+    --x // fica 5
+    
+*/
+document.write('<br>video 8 operadores parte B  ');
+/* == igual
+ === indentico 
+exemplo: 5 == '5' => true numero e string
+ 5===5 => true umero com numero
+ != diferente
+!== diferente restrito
+
+Logicos
+! (negação / não) . exemplo se for true uma coisa que nao e verdadeira e false
+&& (conjunção/ e) . binario exemplo true && true = true / se 1 for false o resultado e false
+|| (disjunçao/ ou) . exemplo true || false = true / significa que basta que um seja true para ser true 
+
+Ternario
+dividido em 3 blocos
+exemplo
+blocoTeste  ?  BlocoTrue  : BlocoFalse
+
+*/
+
+
+var idade = window.prompt('qual a sua idade?')
+var Ternario = idade >=18 ?'verdade':'falso'
+document.write('Você é maior de idade...<strong>' + Ternario + '</strong')
+
+</script>
+</html>
